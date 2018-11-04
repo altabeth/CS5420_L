@@ -13,34 +13,6 @@
 
         <!-- Styles -->
         <style>
-             #ani1:hover {
-                -webkit-transform: translate(-50em,-20em) scale(4) rotate(15deg);
-                -moz-transform: translate(-50em,-20em) scale(4) rotate(15deg);
-                -o-transform: translate(-50em,-20em) scale(4) rotate(15deg);
-                -ms-transform: translate(-50em,-20em) scale(4) rotate(15deg);
-             transform: translate(-50em,-20em) scale(4) rotate(15deg);
-
-                 /*
-                -webkit-transform: translate(3m,2m) scale(.8);
-                -moz-transform: translate(3m,2m) scale(.8);
-                 -o-transform: translate(3m,2m) scale(.8);
-                -ms-transform: translate(3m,2m) scale(.8);
-                transform: translate(3m,2m) scale(.8);
-                -webkit-transform: translate(4m,3m) scale(.6);
-                -moz-transform: translate(3m,3m) scale(.6);
-                 -o-transform: translate(3m,3m) scale(.6);
-                -ms-transform: translate(3m,3m) scale(.6);
-                transform: translate(3m,3m) scale(.6);
-                */
-  }
-              #ani1{
-                  float:right;
-                 background-color: transparent;
-                -webkit-transition: 5s ease-in-out;
-                -moz-transition: 5s ease-in-out;
-                 -o-transition: 5s ease-in-out;
-                transition: 5s ease-in-out;
-  }
             html, body {
                 background-color: #000;
                 color: #06c400;
@@ -48,8 +20,8 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
-                background-image: url("../public/images/alien-invasion-background.jpg");
-                text-shadow: 0 0 8px black;
+                background-image: url("/images/alien-invasion-background.jpg");
+                text-shadow: 0 0 16px black;
             }
 
             .full-height {
@@ -70,7 +42,6 @@
                 position: absolute;
                 right: 10px;
                 top: 18px;
-                color:#06c400;
             }
 
             .content {
@@ -110,22 +81,23 @@
                     @endauth
                 </div>
             @endif
- 
+
             <div class="content">
                 <div class="title m-b-md">
                     UFO Alert System
                 </div>
                 <h3>The truth is <i>totally</i> out there</h3>
-                                <!--<div class="links">
+
+                <div class="links">
+                <!--
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-           
-                </div> -->
-                <div id="ani1"><img src="images/ufo-spaceship.png" width="70px"></div>
+                    -->
+                </div>
             </div>
         </div>
     </body>

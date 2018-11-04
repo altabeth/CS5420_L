@@ -2747,6 +2747,8 @@ textarea.form-control {
     margin-top: 0;
     margin-right: 0.25rem;
     margin-left: 0;
+    /*mine*/
+    background-color: #00000075;
   }
 
   .form-inline .custom-control {
@@ -2845,8 +2847,10 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #2176bd;
+  /*color: #fff;
+  background-color: #2176bd;*/
+  color: #000;
+  background-color:#07b101;
   border-color: #1f6fb2;
 }
 
@@ -10465,11 +10469,113 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-
 .navbar-laravel {
-  background-color: #000;
-  color: #fff;
+  background-color: #06c400;
+  color: #06c400;
+  text-shadow: #06c400;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+/*
+from "WELCOME"
+*/
+html, body {
+  background-color: #000;
+  color: #06c400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../../public/images/alien-invasion-background.jpg");
+  text-shadow: 0 0 8px black;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.top-right {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  color:#06c400;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 84px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.links > a {
+  color: #06c400;
+  padding: 0 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.m-b-md {
+  margin-bottom: 30px;
+}
+/*my additions*/
+
+.card{
+  background-color:#00000088;
+  color:#06c400;
+  box-shadow: 0 0 7px #06c400;
+}
+
+.card .card-header{
+  text-align:center;
+  font-size: 1.5em;
+}
+.card input{
+  background-color:#00000075;
+  color:#06c400;
+  box-shadow: 0 0 7px #06c400;
+  border:none;
+}
+
+
+button.btn{
+  color:#000;
+  text-shadow: 0 0 3px #000;
+  background-color: #06c400;
+  border: none;
+}
+button.btn:hover{
+  color:#000;
+  text-shadow: 0 0 3px #000;
+  background-color: #06c400;
+  border: none;
+box-shadow: 0 0 3px #09ff00;
+}
+button.btn:active{
+  color:#000;
+  text-shadow: 0 0 3px #000;
+  background-color: #06c400;
+  border: none;
+box-shadow: 2 2 3px #000;
+}
+
+a.btn.btn-link{
+  color:#06c400;
+}
