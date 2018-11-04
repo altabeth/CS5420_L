@@ -10553,6 +10553,10 @@ html, body {
   box-shadow: 0 0 7px #06c400;
   border:none;
 }
+.card input:focus{
+  background-color:#00000094;
+  border:ridge;
+}
 
 
 button.btn{
