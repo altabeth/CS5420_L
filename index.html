@@ -1,0 +1,115 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>UFO Alert System</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+
+        <!-- Styles -->
+        <style>
+  
+            html, body {
+                background-color: #000;
+                color: #06c400;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+                text-shadow: 0 0 8px black;
+            }
+            #lefthalf{
+                width:50%;
+                float:left;
+                position: absolute;
+            }
+
+ 
+            img#back{
+                width:80%;
+                margin:auto;
+                opacity:.1;
+                transition: opacity 7s ease-in;
+                background-color: transparent;
+            }
+
+            body:hover img#back{
+                opacity:1;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+                color:#06c400;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+                font-family: 'Orbitron', sans-serif;
+            }
+
+            .links > a {
+                color: #06c400;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+
+            }
+
+            .m-b-md a {
+                margin-bottom: 30px;
+                margin-top: 250px;
+                margin-right:100px;
+                background-color: #06c400;
+                color:#000;
+                text-shadow:0px 0px 3px #000;
+                box-shadow: 5px 5px 3px #047c00;
+                padding: 30px;
+                padding-top:35px;
+                float: right;
+                text-decoration: none;
+                font-size: .75em;
+            }
+            .m-b-md a:active {
+                box-shadow: 1px 1px 3px #047c00;
+                background-color: #07db00;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="lefthalf">
+    <img id="back" src="Alien1.png"/></body></div>
+            <div class="content">
+            <div class="title m-b-md">
+                <a href="UFOAlertSystem/public">Enter if You Dare</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

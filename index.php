@@ -1,5 +1,4 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +12,7 @@
 
         <!-- Styles -->
         <style>
+  }
             html, body {
                 background-color: #000;
                 color: #06c400;
@@ -20,8 +20,25 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
-                background-image: url("../public/images/alien-invasion-background.jpg");
                 text-shadow: 0 0 8px black;
+
+                -webkit-transform: translate(-50em,-20em) scale(4) rotate(15deg);
+                -moz-transform: translate(-50em,-20em) scale(4) rotate(15deg);
+                -o-transform: translate(-50em,-20em) scale(4) rotate(15deg);
+                -ms-transform: translate(-50em,-20em) scale(4) rotate(15deg);
+             transform: translate(-50em,-20em) scale(4) rotate(15deg);
+            }
+
+ 
+            #back{
+                width:50%;
+                opacity:25%;
+                transition: opacity 5s ease-in;
+                background-color: transparent;
+            }
+
+            body:hover #back{
+                opacity:90%;
             }
 
             .full-height {
@@ -71,33 +88,10 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
+    <img id="back" src="alien1.png"/>
             <div class="content">
-                <div class="title m-b-md">
-                    UFO Alert System
-                </div>
-                <h3>The truth is <i>totally</i> out there</h3>
-
-                <div class="links">
-                <!--
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                    -->
+            <div class="title m-b-md">
+                <a href="UFOAlertSystem/public">Enter if You Dare</a>
                 </div>
             </div>
         </div>
