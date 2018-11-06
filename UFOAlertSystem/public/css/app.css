@@ -10556,6 +10556,8 @@ html, body {
 .card input:focus{
   background-color:#00000094;
   border:ridge;
+  color:#06c400;
+  box-shadow: 0 0 7px #06c400;
 }
 
 

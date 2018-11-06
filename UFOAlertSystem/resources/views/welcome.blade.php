@@ -13,34 +13,6 @@
 
         <!-- Styles -->
         <style>
-             #ani1:hover {
-                -webkit-transform: translate(-50em,-20em) scale(4) rotate(15deg);
-                -moz-transform: translate(-50em,-20em) scale(4) rotate(15deg);
-                -o-transform: translate(-50em,-20em) scale(4) rotate(15deg);
-                -ms-transform: translate(-50em,-20em) scale(4) rotate(15deg);
-             transform: translate(-50em,-20em) scale(4) rotate(15deg);
-
-                 /*
-                -webkit-transform: translate(3m,2m) scale(.8);
-                -moz-transform: translate(3m,2m) scale(.8);
-                 -o-transform: translate(3m,2m) scale(.8);
-                -ms-transform: translate(3m,2m) scale(.8);
-                transform: translate(3m,2m) scale(.8);
-                -webkit-transform: translate(4m,3m) scale(.6);
-                -moz-transform: translate(3m,3m) scale(.6);
-                 -o-transform: translate(3m,3m) scale(.6);
-                -ms-transform: translate(3m,3m) scale(.6);
-                transform: translate(3m,3m) scale(.6);
-                */
-  }
-              #ani1{
-                  float:right;
-                 background-color: transparent;
-                -webkit-transition: 5s ease-in-out;
-                -moz-transition: 5s ease-in-out;
-                 -o-transition: 5s ease-in-out;
-                transition: 5s ease-in-out;
-  }
             html, body {
                 background-color: #000;
                 color: #06c400;
@@ -48,7 +20,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
-                background-image: url("../public/images/alien-invasion-background.jpg");
+                background-image: url("images/alien-invasion-background.jpg");
                 text-shadow: 0 0 8px black;
             }
 
@@ -95,7 +67,44 @@
 
             .m-b-md {
                 margin-bottom: 30px;
+                z-index:2 !important;
             }
+            h3{ z-index:2 !important;}
+            
+            #ali1 {
+                position: absolute;
+                left: 47%;
+                bottom: 3%;
+                width: 70px;
+                -webkit-filter: brightness(.5);
+                filter: brightness(.5);
+                /*
+                -webkit-transition: left 4s cubic-bezier(1,1,0,1), bottom 4s cubic-bezier(1,.5,.5,1), width 4s cubic-bezier(1,.5,.5,1), filter 4s cubic-bezier(1,1,0,1), transform 4s cubic-bezier(1,1,0,1);
+                -moz-transition: left 4s cubic-bezier(1,1,0,1), bottom 4s cubic-bezier(1,.5,.5,1), width 4s cubic-bezier(1,.5,.5,1), filter 4s cubic-bezier(1,1,0,1), transform 4s cubic-bezier(1,1,0,1);
+                -o-transition: left 4s cubic-bezier(1,1,0,1), bottom 4s cubic-bezier(1,.5,.5,1), width 4s cubic-bezier(1,.5,.5,1), filter 4s cubic-bezier(1,1,0,1), transform 4s cubic-bezier(1,1,0,1);
+                transition: left 4s cubic-bezier(1,1,0,1), bottom 4s cubic-bezier(1,.5,.5,1), width 4s cubic-bezier(1,.5,.5,1), filter 4s cubic-bezier(1,1,0,1), transform 4s cubic-bezier(1,1,0,1);*/
+                transition: left 2s ease-in 1.2s, bottom 2s ease-out 0s, width 3s ease-in 1s, filter 4s ease-out, transform 4s ease-out;
+               z-index: 3;;
+
+            }
+            #stage:hover #ali1 {
+                /*left: calc(100% - 100px);*/
+                left:950px;
+                bottom: 550px;
+                width: 300px;
+                -webkit-filter: brightness(1);
+                filter: brightness(1);
+                transform: rotate(-20deg);
+                /*
+                -webkit-transition: left 4s cubic-bezier(1,1,0,1), bottom 4s cubic-bezier(1,1,0,1), width 4s cubic-bezier(1,1,0,1), filter 4s cubic-bezier(1,1,0,1), transform 4s cubic-bezier(1,1,0,1);
+                -moz-transition: left 4s cubic-bezier(1,1,0,1), bottom 4s cubic-bezier(1,1,0,1), width 4s cubic-bezier(1,1,0,1), filter 4s cubic-bezier(1,1,0,1), transform 4s cubic-bezier(1,1,0,1);
+                -o-transition: left 4s cubic-bezier(1,1,0,1), bottom 4s cubic-bezier(1,1,0,1), width 4s cubic-bezier(1,1,0,1), filter 4s cubic-bezier(1,1,0,1), transform 4s cubic-bezier(1,1,0,1);
+                transition: left 4s cubic-bezier(1,1,0,1), bottom 4s cubic-bezier(1,1,0,1), width 4s cubic-bezier(1,1,0,1), filter 4s cubic-bezier(1,1,0,1), transform 4s cubic-bezier(1,1,0,1);
+                */
+                transition: left 2s ease-out 1s, bottom 2s ease-in 0s, width 3s ease-out 1s, filter 4s ease-in, transform 4s ease-in;
+                 z-index: 0 !important;;
+                 }
+
         </style>
     </head>
     <body>
@@ -110,22 +119,22 @@
                     @endauth
                 </div>
             @endif
- 
-            <div class="content">
+            <div id="stage" class="content">
+            <img id="ali1" src="images/ufo-spaceship.png"/>
                 <div class="title m-b-md">
                     UFO Alert System
                 </div>
                 <h3>The truth is <i>totally</i> out there</h3>
-                                <!--<div class="links">
+                <div class="links">
+                <!--
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-           
-                </div> -->
-                <div id="ani1"><img src="images/ufo-spaceship.png" width="70px"></div>
+                    -->
+                </div>
             </div>
         </div>
     </body>
