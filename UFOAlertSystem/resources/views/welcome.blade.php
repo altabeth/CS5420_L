@@ -122,7 +122,8 @@
             <div id="stage" class="content">
             <img id="ali1" src="images/ufo-spaceship.png"/>
                 <div class="title m-b-md">
-                    UFO Alert System
+                    UFO Alert System<br>
+                    <a href="ImageUpload">Upload</a>
                 </div>
                 <h3>The truth is <i>totally</i> out there</h3>
                 <div class="links">
