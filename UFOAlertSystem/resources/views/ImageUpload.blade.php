@@ -71,7 +71,7 @@
                     Location:
                     <input type="text" name="location" class="form-control">
                     Description:
-                    <input type="text" name="description" class="form-control">
+                    <input type="textarea" name="description" class="form-control">
 
                 </div>
 
