@@ -51,12 +51,13 @@ class ImageUploadController extends Controller
         $imageName = time().'.'.request()->image->getClientOriginalExtension();
         $loc = request()->location;
         $des = request()->description;
-
+        $upldTime=date('Y-m-d H:i:s');
+        $id = \Auth::user()->id;
   
 
         request()->image->move(public_path('images'), $imageName);
 
-        DB::insert('insert into sightings (image, location, description) values (?, ?, ?)', [$imageName, $loc, $des]);
+        DB::insert('insert into sightings (user_id, image, location, description, created_at, rank) values (?, ?, ?, ?, ?, ?)', [$id, $imageName, $loc, $des, $upldTime, 5]);
 
   
 

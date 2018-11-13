@@ -68,7 +68,9 @@
                 <div class="col-md-6">
 
                     <input type="file" name="image" class="form-control">
+                    Location:
                     <input type="text" name="location" class="form-control">
+                    Description:
                     <input type="text" name="description" class="form-control">
 
                 </div>

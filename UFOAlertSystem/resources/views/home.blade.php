@@ -15,6 +15,8 @@
                     @endif
 
                     You are logged in!
+                    <br>
+                    <a href="ImageUpload">Report Sighting</a>
                 </div>
             </div>
         </div>
