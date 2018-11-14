@@ -16,7 +16,8 @@
 
                     You are logged in!
                     <br>
-                    <a href="ImageUpload">Report Sighting</a>
+                    
+                    <a href="ImageUpload" class="btn btn-default"><img src="images/ufoIcon.png" width="42" height="42"> Report Sighting</a>
                 </div>
             </div>
         </div>
