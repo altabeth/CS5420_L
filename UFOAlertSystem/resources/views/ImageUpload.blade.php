@@ -1,21 +1,10 @@
-<!DOCTYPE html>
+@extends('layouts.app')
 
-<html>
-
-<head>
-
-    <title>Upload Sighting</title>
-
-</head>
-
-  
-
-<body>
+@section('content')
 
 <div class="container">
 
-
-    <div class="panel panel-primary">
+    <div class="panel panel-primary card">
 
       <div class="panel-heading"><h2>Upload Sighting</h2></div>
 
@@ -61,13 +50,14 @@
 
             @csrf
 
-            <div class="row">
+            <input type="file" name="image" class="form-control, upload-border">
 
-  
+            <div class="row">
 
                 <div class="col-md-6">
 
-                    <input type="file" name="image" class="form-control">
+                    
+
                     Location:
                     <input type="text" name="location" class="form-control">
                     Description:
@@ -75,9 +65,8 @@
 
                 </div>
 
-   
 
-                <div class="col-md-6">
+                <div class="col-md-8">
 
                     <button type="submit" class="btn btn-success">Upload</button>
 
@@ -97,8 +86,4 @@
 
 </div>
 
-</body>
-
-  
-
-</html>
+@endsection

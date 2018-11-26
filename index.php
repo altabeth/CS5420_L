@@ -42,7 +42,7 @@
                 right: 10px;
                 top: 18px;
                 color:#06c400;
-                z-index:10;
+                z-index: 10;
             }
 
             .content {

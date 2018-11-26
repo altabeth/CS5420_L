@@ -1,5 +1,6 @@
 <?php
 namespace App\Http\Controllers;
+use App\Http\Controllers\RankController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -58,7 +59,7 @@ class ImageUploadController extends Controller
         request()->image->move(public_path('images'), $imageName);
 
         DB::insert('insert into sightings (user_id, image, location, description, created_at, rank) values (?, ?, ?, ?, ?, ?)', [$id, $imageName, $loc, $des, $upldTime, 5]);
-
+		RankController::updateUsrRank();
   
 
         return back()

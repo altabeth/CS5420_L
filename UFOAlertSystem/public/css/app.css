@@ -10585,3 +10585,25 @@ box-shadow: 2 2 3px #000;
 a.btn.btn-link{
   color:#06c400;
 }
+
+nav, .alert{
+  text-shadow:none;
+}
+
+.panel.panel-primary{
+  margin:auto;
+  width: 60%;
+}
+
+.panel-body form{
+margin:10px;
+}
+
+.panel h2{
+  margin:10px;
+  }
+
+
+
+
+

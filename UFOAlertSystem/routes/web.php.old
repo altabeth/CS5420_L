@@ -25,5 +25,3 @@ Route::get('image-upload', 'ImageUploadController@imageUpload')->name('image.upl
 Route::post('image-upload', 'ImageUploadController@imageUploadPost')->name('image.upload.post');
 
 Route::view('/ImageUpload', 'ImageUpload');
-
-Route::post('push-rank', 'WelcomeController@pushRankPost')->name('push.rank.post');
