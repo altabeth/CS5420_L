@@ -4,7 +4,11 @@
 
 <div class="container">
 
+<<<<<<< HEAD
     <div class="panel panel-primary card">
+=======
+    <div class="panel panel-primary">
+>>>>>>> f66f1b3ce6ea8c6d5dfb8557e7c637fbba3fa128
 
       <div class="panel-heading"><h2>Upload Sighting</h2></div>
 
